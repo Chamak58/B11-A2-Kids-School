@@ -8,4 +8,82 @@
 } */
 body{
     font-family: "Quicksand";
+
+}
+.center{
+    width: 80%;
+    margin: 20px auto;
+    /* border: 1px solid gold; */
+}
+
+.navbar{
+    display: flex;
+    justify-content: space-between;
+}
+.start-navbar{
+    display: flex;
+}
+.start-navbar img{
+    width: 50px;
+    height: 50px;
+}
+.middle-navbar img{
+    display: none;
+}
+.middle-navbar ul{
+    display: flex;
+    column-gap: 20px;
+}
+.middle-navbar ul li{
+    list-style: none;
+}
+.middle-navbar ul li .home{
+    color: darkorange;
+}
+.middle-navbar ul li .about{
+    color: skyblue;
+}
+.middle-navbar ul li .facilities{
+    color: darkturquoise;
+}
+.middle-navbar ul li a{
+    text-decoration: none;
+    font-size: 12px;
+    font-weight: 600;
+}
+.end-navbar{
+    align-content: center;
+}
+.primary-btn{
+    background-color: darkorange;
+    color: white;
+    font-size: 12px;
+    border: none;
+    padding: 8px 30px;
+    border-radius: 10px;
+}
+
+
+
+
+/* media query for small device */
+@media screen and (max-width: 576px) {
+    .center{
+        width: 90%;
+        margin: 10px auto;
+    }
+    .start-navbar h3{
+        display: none;
+    }
+    .middle-navbar img{
+       width: 40px;
+       height: 40px;
+       display: block; 
+    }
+    .middle-navbar ul{
+        display: none;
+    }
+    .end-navbar{
+        display: none;
+    }
 }

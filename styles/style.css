@@ -159,7 +159,118 @@ body{
     color: violet;
     font-weight: 600;
 }
+.stories{
+    background-image: url(/assets/bg.png), linear-gradient(to top,#fbc686, whitesmoke);
+    padding: 20px 120px;
+    margin: 50px auto;
+}
+.stories h2{
+    text-align: center;
 
+}
+.image-container{
+    display: flex;
+    justify-content: space-between;
+    column-gap: 50px;
+}
+.image-left{
+    width: 45%;
+}
+.image-left img{
+    width: 100%;
+    border-radius: 10px;
+    position: relative;
+    z-index: 0;
+}
+.image-left .image-left-info{
+    font-size: 0.75rem;
+    line-height: 20px;
+    text-align: justify;
+}
+.image-left .balance .date{
+    font-size: 0.75rem;
+    font-weight: 500;
+    background-color: aqua;
+    width: 30%;
+    text-align: center;
+    padding: 8px 10px;
+    border-radius: 20px;
+    margin-top: -20px;
+    margin-left: 20px;
+    position: relative;
+    z-index: 5;
+}
+.image-right{
+    display: grid;
+    grid-template-columns: repeat(2, 2fr);
+    width: 50%;
+    gap: 20px;
+}
+.image-right div{
+    width: 100%;
+}
+.image-right div img{
+    width: 100%;
+    border-radius: 10px;
+    position: relative;
+    z-index: 0;
+}
+.image-right div .balance .date-story-2{
+    font-size: 0.75rem;
+    font-weight: 500;
+    background-color: rgb(163, 203, 95);
+    width: 50%;
+    text-align: center;
+    padding: 8px 10px;
+    border-radius: 20px;
+    margin-top: -20px;
+    margin-left: 20px;
+    position: relative;
+    z-index: 5;
+}
+.image-right div .balance .date-story-3{
+    font-size: 0.75rem;
+    font-weight: 500;
+    background-color: lightblue;
+    width: 50%;
+    text-align: center;
+    padding: 8px 10px;
+    border-radius: 20px;
+    margin-top: -20px;
+    margin-left: 20px;
+    position: relative;
+    z-index: 5;
+}
+.image-right div .balance .date-story-4{
+    font-size: 0.75rem;
+    font-weight: 500;
+    background-color: lightgreen;
+    width: 50%;
+    text-align: center;
+    padding: 8px 10px;
+    border-radius: 20px;
+    margin-top: -20px;
+    margin-left: 20px;
+    position: relative;
+    z-index: 5;
+}
+.image-right div .balance .date-story-5{
+    font-size: 0.75rem;
+    font-weight: 500;
+    background-color: lightyellow;
+    width: 50%;
+    text-align: center;
+    padding: 8px 10px;
+    border-radius: 20px;
+    margin-top: -20px;
+    margin-left: 20px;
+    position: relative;
+    z-index: 5;
+}
+.story-btn{ 
+    text-align: center;
+    margin: 20px 0;   
+}
 
 
 
@@ -216,5 +327,48 @@ body{
         background: url(/assets/bg.png);
         margin-top: 20px;
     }
+    .stories{
+        padding: 20px;
+    }
     
+    .image-container{
+        flex-direction: column;
+        
+    }
+    .image-left{
+        width: 100%;
+        margin-bottom: 20px;
+    }
+    .image-left img{
+        width: 100%;
+    }
+    
+    .image-left .balance .date{
+        font-size: 0.75rem;
+        font-weight: 500;
+        background-color: aqua;
+        width: 30%;
+        text-align: center;
+        padding: 8px 10px;
+        border-radius: 20px;
+        margin-top: -20px;
+        margin-left: 20px;
+        position: relative;
+        z-index: 5;
+    }
+    .image-right{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        width: 100%;
+    }
+    .image-right div{
+        width: 100%;
+        margin-bottom: 10px;
+    }
+    .image-right div img{
+        width: 100%;
+        border-radius: 10px;
+        position: relative;
+        z-index: 0;
+    }    
 }

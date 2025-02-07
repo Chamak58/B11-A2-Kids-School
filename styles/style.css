@@ -161,9 +161,11 @@ body{
 }
 .stories{
     background-image: url(/assets/bg.png), linear-gradient(to top,#fbc686, whitesmoke);
-    padding: 20px 120px;
     margin: 50px auto;
+    padding-bottom: 50px;
+    padding-top: 20px;
 }
+
 .stories h2{
     text-align: center;
 
@@ -267,10 +269,74 @@ body{
     position: relative;
     z-index: 5;
 }
-.story-btn{ 
+.stories .story-btn{ 
     text-align: center;
-    margin: 20px 0;   
 }
+footer{
+    background-color: #01ACFD;
+
+}
+
+.footer{
+    display: flex;
+    justify-content: space-between;
+    column-gap: 50px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+.footer .footer-start{
+    width: 35%;
+}
+.footer .footer-start .heading{
+    display: flex;
+}
+.footer .footer-start .heading img{
+    height: 60px;
+    width: 50px;
+}
+.footer .footer-start .heading h3{
+    margin-top: 10px;
+    color: white;
+}
+.footer .footer-start p{
+    font-size: 0.75rem;
+    text-align: justify;
+    line-height: 20px;
+    color: white;
+}
+.footer .footer-middle{
+    width: 25%;
+    color: white;
+}
+.footer .footer-middle li{
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    row-gap: 10px;
+}
+.footer .footer-middle li a{
+    text-decoration: none;
+    font-size: 0.75rem;
+    color: white;
+}
+.footer .footer-end h4{
+    color: white;
+}
+.footer .footer-end li{
+    list-style: none;
+}
+.footer .footer-end li a{
+    text-decoration: none;
+}
+.footer .footer-end li a img{
+    width: 30px;
+}
+
+
+
+
+
+
 
 
 
@@ -370,5 +436,50 @@ body{
         border-radius: 10px;
         position: relative;
         z-index: 0;
+    }footer{
+        text-align: center;
+    }
+    .footer{
+        flex-direction: column;
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+    .footer .footer-start{
+        width: 80%;
+        margin: 10px auto;
+    }
+    .footer .footer-start .heading{
+        justify-content: center;
+    }
+    
+    .footer .footer-middle{
+        width: 40%;
+        color: white;
+        margin: 10px auto;
+        
+    }
+    .footer .footer-middle li{
+        list-style: none;
+        display: flex;
+        flex-direction: column;
+        row-gap: 10px;
+    }
+    .footer .footer-middle li a{
+        text-decoration: none;
+        font-size: 0.75rem;
+        color: white;
+    }
+    .footer .footer-end h4{
+        color: white;
+        margin-top: 20px;
+    }
+    .footer .footer-end li{
+        list-style: none;
+    }
+    .footer .footer-end li a{
+        text-decoration: none;
+    }
+    .footer .footer-end li a img{
+        width: 30px;
     }    
 }
